@@ -1,0 +1,85 @@
+$basic-margin: 32px;
+$basic-padding: 24px;
+
+$normal-font-size: 16px;
+$large-font-size: 20px;
+
+// $deepBlue: rgba(0,33,64,1);
+$deepBlue: #2f3a5c;
+//$blue: #3a2b7e;
+$blue: #4b8d92;
+$blue-active: #00fffb;
+$grey: #dde1e8;
+//$background: linear-gradient(150deg, #3a2b7e, #2f3a5c);
+$background: #4b8d92;
+$background-gray: #f0f2f5;
+
+$shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.15);
+$trans: 0.6s ease 0s;
+
+$max-width: 1440px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+
+$global-fs: 17px;
+
+.card-footer {
+  .el-pagination {
+    .el-pagination__total {
+      font-size: 18px !important;
+    }
+  }
+}
+
+.search-container {
+  .el-input {
+    input {
+      font-size: $global-fs;
+    }
+  }
+}
+
+.menu-container {
+  .el-menu-item {
+    height: 100px !important;
+    color: red;
+    padding-top: 17px;
+  }
+}
+
+.card-container {
+  .content {
+    padding-top: 0px;
+
+    .data-item {
+      font-size: $global-fs;
+    }
+  }
+
+  .card-header {
+    font-size: $global-fs !important;
+  }
+
+  .home-ul {
+    li {
+      font-size: $global-fs;
+    }
+  }
+
+}
+
+.el-table {
+  thead, .el-table__row {
+    font-size: 16px;
+  }
+}
+
+/*
+Mixin
+*/
+@mixin responsive($screen) {
+  @media screen and(max-width: #{$screen}) {
+    @content;
+  }
+}
