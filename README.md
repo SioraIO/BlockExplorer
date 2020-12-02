@@ -1,8 +1,8 @@
-# XSR - BlockExplorer
+### XSR - BlockExplorer
 
 A Block chain Explorer for XSR(SIORA).
 
-## Development
+### Development
 
 '''shell
 $ npm install
